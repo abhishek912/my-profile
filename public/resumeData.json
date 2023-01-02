@@ -51,33 +51,49 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2017",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Department Of Computer Science, University Of Delhi",
+        "degree":"MSc Computer Science",
+        "graduated":"July 2021",
+        "description":"8.74 CGPA"
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2013",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Deen Dayal Upadhyaya College, University Of Delhi",
+        "degree":"BSc(Hons) Computer Science",
+        "graduated":"July 2019",
+        "description":"9.24 CGPA"
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Policybazaar.com, Gurugram, India",
+        "title":"Software Development Engineer",
+        "years":"June 2021 - Present",
+        "description":[
+          "Booking Management System(BMS)",
+          "System helps agents to coordinate with the customers regarding their policies",
+          "Building Rest Api's using .Net Framework framework",
+          "Developed a new application using ReactJS & .Net for email sending/view and email template creation",
+          "Developed a widget to raise/update/view the medical requirements of the customers for their term life policies",
+          "Developed a new component to show Renewal details card and automate the communication of renewal system",
+          "Developed a dashboard to view the logs stored in MongoDB, this enhanced the productivity of product team to analyse logs",
+          "Debugging and Resolving Bugs in Product, to ensure Proper and optimal working",
+          ".Net Core, MVC, N-Layered Architecture, React JS, SQL, Mongo DB, Redis, C#"
+        ]
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Nagarro Software Pvt. Ltd, Gurugram, India",
+        "title":"Software Development Engineer (Intern)",
+        "years":"January 2021 - June 2021",
+        "description":[
+          "Acquired knowledge of C# to start working with .NET Core",
+          "Gained understanding of working according to the company standards",
+          "Created web based projects using n-layered and microservice architecture",
+          "Developed a web-based application to book bus tickets and provided live tracking of bus seats availability between the stations",
+          "Debugging and Resolving Bugs in Production environment, to ensure Proper and optimal working"
+        ]
       }
     ],
     "skills":[
