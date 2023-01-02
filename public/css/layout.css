@@ -67,6 +67,13 @@ header .banner-text h3 {
    margin: 0 auto;
    width: 70%;
 }
+header .banner-text h2 {
+   font: 40px/1.9em 'librebaskerville-regular', serif;
+   color: #ddd;
+   margin: 0 auto;
+   width: 70%;
+   text-decoration: underline;
+}
 header .banner-text h3 span,
 header .banner-text h3 a {
    color: #fff;
@@ -202,8 +209,8 @@ ul#nav li.current a { color: #fe6928; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 170px;
+   height: 170px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
