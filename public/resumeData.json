@@ -8,7 +8,10 @@
       "I’m currently employed as Software Development Engineer at Policybazaar.com. I have hands on in all stages of the software development cycle, from planning and design to testing and deployment. No two days are the same for me, my tasks may involve analysing algorithms, altering code, fixing bugs, brainstorming ideas or integrating new systems",
       "Something that I love about software development is the opportunity to work with people from a wide range of disciplines. The software development lifecycle involves working with so many different people and departments and, as a people person and someone who loves to build new relationships, it’s great to be able to come together with other professionals who are striving towards the same goal."
     ],
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "logo": [
+      "pbLogo.png"
+    ],
+    "contactmessage":"",
     "email": "abhishek.mcs19.du@gmail.com",
     "phone": "+91-8076187250",
     "github":"https://github.com/abhishek912",
@@ -24,28 +27,13 @@
     "resumedownload":"https://drive.google.com/file/d/149O3VpXJiuBIqtPmguT7iO91HTnz7IYj/view",
     "social":[
       {
-        "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/abhishek-sharma-03a0301b8",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
-      },
-      {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://github.com/abhishek912",
         "className":"fa fa-github"
       }
     ]
@@ -57,13 +45,15 @@
         "school":"Department Of Computer Science, University Of Delhi",
         "degree":"MSc Computer Science",
         "graduated":"July 2021",
-        "description":"8.74 CGPA"
+        "description":"8.74 CGPA",
+        "logo": "duLogo.png"
       },
       {
         "school":"Deen Dayal Upadhyaya College, University Of Delhi",
         "degree":"BSc(Hons) Computer Science",
         "graduated":"July 2019",
-        "description":"9.24 CGPA"
+        "description":"9.24 CGPA",
+        "logo": "duLogo.png"
       }
     ],
     "work":[
@@ -81,7 +71,8 @@
           "Developed a dashboard to view the logs stored in MongoDB, this enhanced the productivity of product team to analyse logs",
           "Debugging and Resolving Bugs in Product, to ensure Proper and optimal working",
           ".Net Core, MVC, N-Layered Architecture, React JS, SQL, Mongo DB, Redis, C#"
-        ]
+        ],
+        "logo": "pbLogo.png"
       },
       {
         "company":"Nagarro Software Pvt. Ltd, Gurugram, India",
@@ -93,113 +84,92 @@
           "Created web based projects using n-layered and microservice architecture",
           "Developed a web-based application to book bus tickets and provided live tracking of bus seats availability between the stations",
           "Debugging and Resolving Bugs in Production environment, to ensure Proper and optimal working"
-        ]
+        ],
+        "logo": "nagarroLogo.png"
       }
     ],
     "skills":[
       {
-        "name":"Python",
-        "level":"60%"
+        "sectionName": "Frameworks",
+        "skillSet": [
+          ".NET Core",
+          "React JS"
+        ]
       },
       {
-        "name":"VueJs",
-        "level":"55%"
+        "sectionName": "Programming Languages",
+        "skillSet": [
+          "C#",
+          "Java",
+          "Javascript",
+          "C++",
+          "Python"
+        ]
       },
       {
-        "name":"ReactJs",
-        "level":"50%"
+        "sectionName": "Database",
+        "skillSet": [
+          "MySQL",
+          "MongoDB",
+          "PostgreSQL"
+        ]
       },
       {
-        "name":"CSS",
-        "level":"90%"
+        "sectionName": "Soft Skills",
+        "skillSet": [
+          "Leadership",
+          "Event Management",
+          "PostgreSQL",
+          "Time & Event Organization",
+          "Communication"
+        ]
       },
       {
-        "name":"PHP",
-        "level":"80%"
-      },
-      {
-        "name":"Swift",
-        "level":"50%"
-      },
-      {
-        "name":"JAVA",
-        "level":"80%"
+        "sectionName": "Others",
+        "skillSet": [
+          "Rest API",
+          "Kafka",
+          "Redis",
+          "Git",
+          "Azure",
+          "Multithreading",
+          "CI/CD",
+          "Unit Testing"
+        ]
       }
     ]
   },
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"01.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"Renewal Widget",
+        "category":"Informative component to view and send communication to the customer regarding their policy renewal payments",
+        "image":"img5.png",
+        "url":"https://www.policybazaar.com"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Booking Management System (BMS)",
+        "category":"Policybazaar agent view website to deal with the customers",
+        "image":"img1.png",
+        "url":"https://www.policybazaar.com"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title":"Medical Widget",
+        "category":"Component to view medical information of term life policies",
+        "image":"img3.png",
+        "url":"https://www.policybazaar.com"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Customer Touch Point (CTP)",
+        "category":"Component to view/send the email and whatsapp that is sent to the customer by Policybazaar",
+        "image":"img2.png",
+        "url":"https://www.policybazaar.com"
       },
       {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"01.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"React components developed and maintained by me",
+        "category":"Renewal widget, Medical Widget & Documents widget",
+        "image":"img4.png",
+        "url":"https://www.policybazaar.com"
       }
     ]
   }

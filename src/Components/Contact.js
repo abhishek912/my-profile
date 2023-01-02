@@ -117,7 +117,7 @@ class Contact extends Component {
                 </p>
               </div>
 
-              <div className="widget widget_tweets">
+              <div className="widget widget_tweets" style={{display: "none"}}>
                 <h4 className="widget-title">Latest Tweets</h4>
                 <ul id="twitter">
                   <li>

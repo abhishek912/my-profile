@@ -268,6 +268,7 @@ ul#nav li.current a { color: #fe6928; }
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
+
 #resume .info {
    font: 16px/24px 'librebaskerville', serif;
    color: #6E7881;
@@ -358,7 +359,7 @@ ul#nav li.current a { color: #fe6928; }
 
 @-moz-keyframes git {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  d% { width: 60%;  }
 }
 @-moz-keyframes illustrator {
   0%   { width: 0px;  }
@@ -941,8 +942,8 @@ footer {
    position: relative;
 }
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer a, footer a:visited { color: #fff; }
+footer a:hover, footer a:focus { color: #0762f9; }
 
 /* copyright */
 footer .copyright {
@@ -950,10 +951,10 @@ footer .copyright {
     padding: 0;
  }
 footer .copyright li {
-    display: inline-block;
     margin: 0;
     padding: 0;
     line-height: 24px;
+    color: #FFFFFF;
 }
 .ie footer .copyright li {
    display: inline;
@@ -1028,4 +1029,32 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 .github-btn{
    background-color: #34495e !important;
+}
+
+.pb-logo {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: -16%;
+    margin-top: -50px;
+   -webkit-animation:spin 4s linear infinite;
+   -moz-animation:spin 4s linear infinite;
+   animation:spin 4s linear infinite;
+   transform-origin: 50% 90%;
+}
+@keyframes spin { 
+   100% { 
+       -webkit-transform: rotate(0deg); 
+       transform:rotate(360deg); 
+   } 
+}
+
+.company-logo{
+   max-width: 60px;
+    height: 60px;
+    border-radius: 36px;
+    border: solid;
+    border-color: blac
 }
