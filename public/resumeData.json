@@ -1,22 +1,27 @@
 {
   "main": {
     "name":"Abhishek Sharma",
-    "description":"I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
-    "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "description":["Quickly adopt new technologies and tools", "Collaborative team player", "Curious about new possibilities and act to explore them"],
+    "image":"profile.jpeg",
+    "bio":[
+      "I am a Software Engineer, specialising in the web development arena. For the last 2 years, I have been developing websites using React JS, .Net Core and SQL.",
+      "I’m currently employed as Software Development Engineer at Policybazaar.com. I have hands on in all stages of the software development cycle, from planning and design to testing and deployment. No two days are the same for me, my tasks may involve analysing algorithms, altering code, fixing bugs, brainstorming ideas or integrating new systems",
+      "Something that I love about software development is the opportunity to work with people from a wide range of disciplines. The software development lifecycle involves working with so many different people and departments and, as a people person and someone who loves to build new relationships, it’s great to be able to come together with other professionals who are striving towards the same goal."
+    ],
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "email": "abhishek.mcs19.du@gmail.com",
+    "phone": "+91-8076187250",
+    "github":"https://github.com/abhishek912",
+    "project":"https://github.com/abhishek912",
     "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "street":"",
+      "city":"New Delhi",
+      "state":"Delhi",
+      "zip": "110092",
+      "country": "India"
     },
     "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "resumedownload":"https://drive.google.com/file/d/149O3VpXJiuBIqtPmguT7iO91HTnz7IYj/view",
     "social":[
       {
         "name":"facebook",
