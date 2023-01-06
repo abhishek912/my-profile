@@ -1,17 +1,89 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Fade, Slide } from "react-reveal";
+import emailjs from '@emailjs/browser';
+import CircularProgress from '@mui/material/CircularProgress';
+import Snackbar from '@mui/material/Snackbar';
 
-class Contact extends Component {
-  render() {
-    if (!this.props.data) return null;
+function Contact(props) {
+    if (!props.data) return null;
 
-    const name = this.props.data.name;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    const message = this.props.data.contactmessage;
+    const name = props.data.name;
+    const street = props.data.address.street;
+    const city = props.data.address.city;
+    const state = props.data.address.state;
+    const zip = props.data.address.zip;
+    const phone = props.data.phone;
+    const message = props.data.contactmessage;
+
+    const serviceId = "service_w5jno5n";
+    const templateId = "template_f65n4i8";
+    const publicKey = "VaZDp9kX7NFewtdE5"; 
+
+    const [showLoader, setShowLoader] = useState(false);
+    const [open, setOpen] = useState(false);
+    const [emailMsg, setEmailMsg] = useState("");
+
+    const [emailData, setEmailData] = useState({name: "", email: "", subject: "", message: ""});
+
+    const handleClose = () => {
+      setOpen(false);
+    };
+
+    const checkEmailSend = () => {
+      if(emailData.name == "") {
+        setEmailMsg('Name is required to send an email');
+        setOpen(true);
+        return false;
+      }
+      else if(emailData.email == "") {
+        setEmailMsg('Email is required to send an email');
+        setOpen(true);
+        return false;
+      }
+      else if(emailData.message == "") {
+        setEmailMsg('Message body cannot be empty');
+        setOpen(true);
+        return false;
+      }
+      return true;
+    }
+
+    console.log(emailData)
+
+    const sendEmail = () => {
+      event.preventDefault();
+      setShowLoader(true);
+
+      if(checkEmailSend()){
+        emailjs.send(serviceId, templateId, emailData, publicKey)
+        .then(response => {
+          setShowLoader(false);
+          setEmailMsg('Email sent successfully!');
+          setOpen(true);
+        }, error => {
+          setShowLoader(false);
+          setEmailMsg('Some error occurred while sending an email, we will get back to you!');
+          setOpen(true);
+        });
+      }
+      else{
+        setShowLoader(false);
+      }
+    }
+
+    const handleChange = () => {
+      var id = event.target.id;
+      var value = event.target.value; 
+      if(id == "contactName"){
+        setEmailData({...emailData, name: value});
+      }else if(id == "contactEmail"){
+        setEmailData({...emailData, email: value});
+      }else if(id == "contactSubject"){
+        setEmailData({...emailData, subject: value});
+      }else if(id == "contactMessage"){
+        setEmailData({...emailData, message: value});
+      }
+    }
 
     return (
       <section id="contact">
@@ -40,11 +112,11 @@ class Contact extends Component {
                     </label>
                     <input
                       type="text"
-                      defaultValue=""
+                      defaultValue={emailData.name}
                       size="35"
                       id="contactName"
                       name="contactName"
-                      onChange={this.handleChange}
+                      onChange={handleChange}
                     />
                   </div>
 
@@ -54,11 +126,11 @@ class Contact extends Component {
                     </label>
                     <input
                       type="text"
-                      defaultValue=""
+                      defaultValue={emailData.email}
                       size="35"
                       id="contactEmail"
                       name="contactEmail"
-                      onChange={this.handleChange}
+                      onChange={handleChange}
                     />
                   </div>
 
@@ -66,11 +138,11 @@ class Contact extends Component {
                     <label htmlFor="contactSubject">Subject</label>
                     <input
                       type="text"
-                      defaultValue=""
+                      defaultValue={emailData.subject}
                       size="35"
                       id="contactSubject"
                       name="contactSubject"
-                      onChange={this.handleChange}
+                      onChange={handleChange}
                     />
                   </div>
 
@@ -83,14 +155,18 @@ class Contact extends Component {
                       rows="15"
                       id="contactMessage"
                       name="contactMessage"
+                      onChange={handleChange}
+                      defaultValue={emailData.message}
                     ></textarea>
                   </div>
 
                   <div>
-                    <button className="submit">Submit</button>
-                    <span id="image-loader">
-                      <img alt="" src="images/loader.gif" />
-                    </span>
+                    {
+                      <button className="submit" onClick={sendEmail}>{showLoader ? <CircularProgress /> : "Submit"}</button>
+                    }
+                      <span id="image-loader">
+                        <img alt="" src="images/loader.gif" />
+                      </span>
                   </div>
                 </fieldset>
               </form>
@@ -148,9 +224,21 @@ class Contact extends Component {
             </aside>
           </Slide>
         </div>
+        <Snackbar
+          anchorOrigin = {{ vertical: 'top', horizontal: 'right' }}
+          open={open}
+          onClose={handleClose}
+          message={emailMsg}
+          key={'topRight'}
+          autoHideDuration= {3000}
+        />
+
       </section>
+      
     );
-  }
 }
 
 export default Contact;
+
+
+
