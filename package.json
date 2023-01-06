@@ -1,8 +1,8 @@
 {
+  "homepage": "https://abhishek912.github.io/my-profile",
   "name": "reactniceresume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "anix": "^1.3.6",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.6.0",
     "nodemailer-react": "^1.0.2",
     "notistack": "^2.0.8",
@@ -26,6 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
