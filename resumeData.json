@@ -1,11 +1,11 @@
 {
   "main": {
     "name":"Abhishek Sharma",
-    "description":["Quickly adopt new technologies and tools", "Collaborative team player", "Curious about new possibilities and act to explore them"],
+    "description":["Easily adapt to new technologies and tools", "Collaborative team player", "Curious about new possibilities and act to explore them"],
     "image":"profile.jpeg",
     "bio":[
       "I am a Software Engineer, specialising in the web development arena. For the last 2 years, I have been developing websites using React JS, .Net Core and SQL.",
-      "I’m currently employed as Software Development Engineer at Policybazaar.com. I have hands on in all stages of the software development cycle, from planning and design to testing and deployment. No two days are the same for me, my tasks may involve analysing algorithms, altering code, fixing bugs, brainstorming ideas or integrating new systems",
+      "I’m currently employed as Software Development Engineer at Policybazaar.com. I have hands on in all stages of the software development cycle, from planning and design to testing and deployment. No two days are the same for me, my tasks may involve analysing algorithms, altering code, fixing bugs, brainstorming ideas or integrating new systems.",
       "Something that I love about software development is the opportunity to work with people from a wide range of disciplines. The software development lifecycle involves working with so many different people and departments and, as a people person and someone who loves to build new relationships, it’s great to be able to come together with other professionals who are striving towards the same goal."
     ],
     "logo": [
@@ -23,8 +23,8 @@
       "zip": "110092",
       "country": "India"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"https://drive.google.com/file/d/149O3VpXJiuBIqtPmguT7iO91HTnz7IYj/view",
+    "website": "https://abhishek912.github.io/my-profile/",
+    "resumedownload":"https://drive.google.com/file/d/1zntSV8xSEhXscURJ3G-lBetKZVOdCvRv/view?usp=share_link",
     "social":[
       {
         "name":"linkedin",
